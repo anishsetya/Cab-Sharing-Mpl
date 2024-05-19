@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Cab Share{% endblock %}
+
+{% block content %}
+
+<h1>This is the home page</h1>
+<form action="#" method="POST">
+    <label for="flight_time">Flight Time:</label>
+    <input type="time" id="flight_time" name="flight_time"><br><br>
+    
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date"><br><br>
+    
+    <label for="vacancy">Vacancy:</label>
+    <input type="number" id="vacancy" name="vacancy" min="1"><br><br>
+    
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
